@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [RestFullProject]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="GetBookingIds-DEVT(failed)">
+    <parameter name="url" value="https://restful-booker.herokuapp.con"/>
+    <classes>
+      <class name="com.restfulautomation.testscripts.GetBookingIds">
+        <methods>
+          <include name="getBookingIds" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.restfulautomation.testscripts.GetBookingIds -->
+    </classes>
+  </test> <!-- GetBookingIds-DEVT(failed) -->
+</suite> <!-- Failed suite [RestFullProject] -->
