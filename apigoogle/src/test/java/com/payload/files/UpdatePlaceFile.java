@@ -6,7 +6,7 @@ public class UpdatePlaceFile {
 	
 	public static String updatePlaceFile() {
 		return "{\r\n"
-				+ "\"place_id\":\""+AddPlace.placeid+"\",\r\n"
+				+ "\"place_id\":\""+AddPlace.place_id+"\",\r\n"
 				+ "\"address\":\"70 Summer walk, USA\",\r\n"
 				+ "\"key\":\"qaclick123\"\r\n"
 				+ "}";

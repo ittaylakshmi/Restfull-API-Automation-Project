@@ -11,8 +11,8 @@ public class UpdatePlace {
 	@Test
 	public void updataPlace() {
 		
-		String Placeid = AddPlace.placeid;
-		System.out.println(Placeid);
+//		String Placeid = AddPlace.place_id;
+		System.out.println(AddPlace.place_id);
 		
 //		File request=new File("E:\\googleapi\\UpdatePlace.json");
 		

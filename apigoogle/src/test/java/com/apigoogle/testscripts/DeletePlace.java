@@ -9,7 +9,7 @@ public class DeletePlace {
 	public void deletePlace() {
 		
 		String request = "{\r\n"
-				+ "    \"place_id\":\""+AddPlace.placeid+"\"\r\n"
+				+ "    \"place_id\":\""+AddPlace.place_id+"\"\r\n"
 				+ "}\r\n"
 				+ "";
 		given()

@@ -13,12 +13,12 @@ public class GetPlace {
 			.baseUri("https://rahulshettyacademy.com")
 			.header("Content-Type", "application/json")
 			.queryParam("key", "qaclick123")
-			.queryParam("place_id", AddPlace.placeid)
+			.queryParam("place_id", AddPlace.place_id)
 		.when()
 			.get("/maps/api/place/get/json")
 		.then()
 			.log().all();
-			System.out.println("Print PlaceID " + AddPlace.placeid);
+			System.out.println("Print PlaceID " + AddPlace.place_id);
 		;
 	}
 }
