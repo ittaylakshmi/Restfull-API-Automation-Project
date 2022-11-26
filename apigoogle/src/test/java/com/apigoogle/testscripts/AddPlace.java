@@ -9,7 +9,7 @@ import io.restassured.path.json.JsonPath;
 
 public class AddPlace {
 
-//	static String response;
+//	static String response; ////
 	public static String placeid;
 	
 	@Test
