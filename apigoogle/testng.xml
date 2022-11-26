@@ -16,7 +16,7 @@
 			<class name="com.apigoogle.testscripts.GetPlace" />
 		</classes>
 	</test> <!-- Test -->
-	<test thread-count="5" name="DeletePlace" enabled="false">
+	<test thread-count="5" name="DeletePlace" enabled="true">
 		<classes>
 			<class name="com.apigoogle.testscripts.DeletePlace" />
 		</classes>
