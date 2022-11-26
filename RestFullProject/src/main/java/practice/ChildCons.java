@@ -2,7 +2,7 @@ package practice;
 
 public class ChildCons extends ParentCons {
 	
-	public ChildCons (int i) {
+	public ChildCons (int a) {
 		System.out.println("Child Class Calling From Int-Org Constructor");
 	}
 	
@@ -11,7 +11,7 @@ public class ChildCons extends ParentCons {
 	}
 	
 	public ChildCons (String s1) {
-		super();
+		this(9,10);
 		System.out.println("Child Class Calling From String Org Constructor");
 	}
 	

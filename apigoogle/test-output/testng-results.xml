@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-26T19:59:45 GMT" name="Suite" finished-at="2022-11-26T19:59:56 GMT" duration-ms="10601">
+    <groups>
+    </groups>
+    <test started-at="2022-11-26T19:59:45 GMT" name="AddPlace" finished-at="2022-11-26T19:59:52 GMT" duration-ms="7089">
+      <class name="com.apigoogle.testscripts.AddPlace">
+        <test-method signature="addPlace()[pri:0, instance:com.apigoogle.testscripts.AddPlace@71238fc2]" started-at="2022-11-26T19:59:45 GMT" name="addPlace" finished-at="2022-11-26T19:59:52 GMT" duration-ms="6989" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addPlace -->
+      </class> <!-- com.apigoogle.testscripts.AddPlace -->
+    </test> <!-- AddPlace -->
+    <test started-at="2022-11-26T19:59:52 GMT" name="UpdatePlace" finished-at="2022-11-26T19:59:54 GMT" duration-ms="1267">
+      <class name="com.apigoogle.testscripts.UpdatePlace">
+        <test-method signature="updataPlace()[pri:0, instance:com.apigoogle.testscripts.UpdatePlace@66f57048]" started-at="2022-11-26T19:59:52 GMT" name="updataPlace" finished-at="2022-11-26T19:59:54 GMT" duration-ms="1257" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updataPlace -->
+      </class> <!-- com.apigoogle.testscripts.UpdatePlace -->
+    </test> <!-- UpdatePlace -->
+    <test started-at="2022-11-26T19:59:54 GMT" name="GetPlace" finished-at="2022-11-26T19:59:55 GMT" duration-ms="760">
+      <class name="com.apigoogle.testscripts.GetPlace">
+        <test-method signature="getPlace()[pri:0, instance:com.apigoogle.testscripts.GetPlace@1e1a0406]" started-at="2022-11-26T19:59:54 GMT" name="getPlace" finished-at="2022-11-26T19:59:55 GMT" duration-ms="750" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPlace -->
+      </class> <!-- com.apigoogle.testscripts.GetPlace -->
+    </test> <!-- GetPlace -->
+    <test started-at="2022-11-26T19:59:55 GMT" name="DeletePlace" finished-at="2022-11-26T19:59:56 GMT" duration-ms="1003">
+      <class name="com.apigoogle.testscripts.DeletePlace">
+        <test-method signature="deletePlace()[pri:0, instance:com.apigoogle.testscripts.DeletePlace@71a8adcf]" started-at="2022-11-26T19:59:55 GMT" name="deletePlace" finished-at="2022-11-26T19:59:56 GMT" duration-ms="994" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletePlace -->
+      </class> <!-- com.apigoogle.testscripts.DeletePlace -->
+    </test> <!-- DeletePlace -->
+  </suite> <!-- Suite -->
+</testng-results>

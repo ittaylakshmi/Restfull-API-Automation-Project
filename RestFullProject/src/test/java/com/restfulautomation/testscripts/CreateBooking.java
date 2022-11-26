@@ -20,6 +20,8 @@ import org.testng.annotations.Test;
 
 import com.restfulautomation.helper.ExcelData;
 
+import io.restassured.path.json.JsonPath;
+
 public class CreateBooking {
 	
 //	String requestBody = "{\r\n"
@@ -34,7 +36,8 @@ public class CreateBooking {
 //			+ "    \"additionalneeds\" : \"Breakfast\"\r\n"
 //			+ "}";
 	
-	static int id;
+//	static int id;
+	static String response;
 //	static String url;
 	
 //	@Parameters ({"url"})
@@ -56,7 +59,7 @@ public class CreateBooking {
 		requestObj.put("additionalneeds", additionalNeeds);
 		
 		
-		id = given()
+		response = given()
 //			given() -- dont delete/dont touch this line
 //			.baseUri("https://restful-booker.herokuapp.com/booking") -- this line used only for SYST testing Env.
 			.baseUri("https://restful-booker.herokuapp.com/booking")
@@ -68,28 +71,32 @@ public class CreateBooking {
 		.then()
 			.statusCode(200)
 			.statusLine("HTTP/1.1 200 OK")
-			.body("$", instanceOf(Object.class))
-			.body("$", notNullValue())
-			.body("bookingid", instanceOf(Integer.class))
-			.body("booking", instanceOf(Object.class))
-			.body("booking.firstname", instanceOf(String.class))
-			.body("booking.firstname", equalTo(firstName))
-			.body("booking.lastname", instanceOf(String.class))
-			.body("booking.lastname", equalTo(lastName))
-			.body("booking.totalprice", instanceOf(Integer.class))
-			.body("booking.totalprice", equalTo(Integer.parseInt(totalPrice)))
-			.body("booking.depositpaid", instanceOf(boolean.class))		
-			.body("booking.depositpaid", equalTo(Boolean.parseBoolean(depositPaid)))
-			.body("booking.bookingdates.checkin", instanceOf(String.class))
-			.body("booking.bookingdates.checkin", equalTo(checkIn))
-			.body("booking.bookingdates.checkout", instanceOf(String.class))
-			.body("booking.bookingdates.checkout", equalTo(checkOut))
-			.body("booking.additionalneeds", instanceOf(String.class))
-			.body("booking.additionalneeds", equalTo(additionalNeeds))
-			.extract().jsonPath().getInt("bookingid")
+//			.body("$", instanceOf(Object.class))
+//			.body("$", notNullValue())
+//			.body("bookingid", instanceOf(Integer.class))
+//			.body("booking", instanceOf(Object.class))
+//			.body("booking.firstname", instanceOf(String.class))
+//			.body("booking.firstname", equalTo(firstName))
+//			.body("booking.lastname", instanceOf(String.class))
+//			.body("booking.lastname", equalTo(lastName))
+//			.body("booking.totalprice", instanceOf(Integer.class))
+//			.body("booking.totalprice", equalTo(Integer.parseInt(totalPrice)))
+//			.body("booking.depositpaid", instanceOf(boolean.class))		
+//			.body("booking.depositpaid", equalTo(Boolean.parseBoolean(depositPaid)))
+//			.body("booking.bookingdates.checkin", instanceOf(String.class))
+//			.body("booking.bookingdates.checkin", equalTo(checkIn))
+//			.body("booking.bookingdates.checkout", instanceOf(String.class))
+//			.body("booking.bookingdates.checkout", equalTo(checkOut))
+//			.body("booking.additionalneeds", instanceOf(String.class))
+//			.body("booking.additionalneeds", equalTo(additionalNeeds))
+//			.extract().jsonPath().getInt("bookingid")
+			.extract().response().asString();
 //			.log().all();
+		
+			JsonPath js=new JsonPath(response);
+			
 		;
-			System.out.println(id);	
+			System.out.println(js);	
 	}
 	
 	

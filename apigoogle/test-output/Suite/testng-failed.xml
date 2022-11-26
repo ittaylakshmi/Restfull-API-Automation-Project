@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="AddPlace(failed)">
+    <classes>
+      <class name="com.apigoogle.testscripts.AddPlace">
+        <methods>
+          <include name="addPlace"/>
+        </methods>
+      </class> <!-- com.apigoogle.testscripts.AddPlace -->
+    </classes>
+  </test> <!-- AddPlace(failed) -->
+  <test thread-count="5" name="GetPlace(failed)">
+    <classes>
+      <class name="com.apigoogle.testscripts.GetPlace">
+        <methods>
+          <include name="getPlace"/>
+        </methods>
+      </class> <!-- com.apigoogle.testscripts.GetPlace -->
+    </classes>
+  </test> <!-- GetPlace(failed) -->
+</suite> <!-- Failed suite [Suite] -->
